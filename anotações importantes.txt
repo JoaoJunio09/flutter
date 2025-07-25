@@ -1,0 +1,9 @@
+O flutter é declarativo, ou seja, diferente do html e xml como em projetos android com java, o layout não é feito a partir de "blocos", é o layout é desenvolvido de forma
+declarativa a partir da orientação a objetos, criando classes e declarando objetos.
+
+- A construção do seu layout é feita a partir de Widgets, onde cada Widget pode ou não possuir um child (filho). Basicamente é uma forma hierárquica, como o HTML na criação das divs,
+ onde temos diversas divs criadas e uma é pai ou filho da outra, mas no caso do flutter, é de forma declarada e com base na orientação a objetos.
+- Temos 2 formas de estados do Widget, o global e o local.
+- StatelessWidget -> são imutáveis e não alteram seu valor após a sua criação.
+- StatefulWidget -> possuem estado mutável, permitindo que suas características mudem e seus valores alterem durante a execução do aplicativo. (setState() -> função que chama o build).
+- Sempre quando o app for inicializado, é interessante que por Widget padrão, seja inicializado o MaterialApp > Widget padrão que deixa o layout com mais aparência de aplicativo.
