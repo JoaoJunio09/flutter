@@ -7,3 +7,11 @@ declarativa a partir da orientação a objetos, criando classes e declarando obj
 - StatelessWidget -> são imutáveis e não alteram seu valor após a sua criação.
 - StatefulWidget -> possuem estado mutável, permitindo que suas características mudem e seus valores alterem durante a execução do aplicativo. (setState() -> função que chama o build).
 - Sempre quando o app for inicializado, é interessante que por Widget padrão, seja inicializado o MaterialApp > Widget padrão que deixa o layout com mais aparência de aplicativo.
+
+No flutter nós temos o Widget mais padrão que no caso é o Container(), ele pode ser considerado como uma div, que quando criamos é um elemento vazio que podemos colocar tamanho nele, 
+como altura, largura, color. No entanto, caso queiramos dentro deste Container, colocar um child (filho), com um OUTRO CONTAINER, um menor com cor diferente, este Container filho representado
+filho child, irá herdar as propriedades do seu container pai, como a altura e a largura. Para resolver este pequeno detalhe, sempre quando queremos criar um container filho dentro de outro container pai,
+utilizando sempre o child (filho), precisamos sempre dizer que este child é um SingleChildRenderObjectWidget -> para poder "renderizar" um elemento dentro do outro. Como dizemos isto? Simples: 
+quando declararmos um child dentro de um Container pai, iremos declarar uma classe que extende de SingleChildRenderObjectWidget, pode ser a classe Center(), ou a classe Align(). Depois de
+declarar a classe que extende de SingleChildRenderObjectWidget, colocamos outro child para esta classe, e ai sim as propriedades do elemento, podendo ser um quadrado menor com color diferente
+do Container pai.
