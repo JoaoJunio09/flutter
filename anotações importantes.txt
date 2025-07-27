@@ -15,3 +15,10 @@ utilizando sempre o child (filho), precisamos sempre dizer que este child é um 
 quando declararmos um child dentro de um Container pai, iremos declarar uma classe que extende de SingleChildRenderObjectWidget, pode ser a classe Center(), ou a classe Align(). Depois de
 declarar a classe que extende de SingleChildRenderObjectWidget, colocamos outro child para esta classe, e ai sim as propriedades do elemento, podendo ser um quadrado menor com color diferente
 do Container pai.
+
+Construção de layouts:
+
+Na construção dos layouts no flutter acaba sendo talvez mais fácil do que html para quem entende bem de Programação orientada a objetos, isso por ser declarativa, então na construção dos layouts,
+você vai criando e desenvolvendo de cima para baixo, sempre criando Widgets, como Containers vazios com um heigth (altura) para dar espaçamento entre dois elementos. Por si só é de fácil entendimento, o que acaba complicando e deixando confuso, é que precisamos escrever muito código declarativo, tudo deve ser declarado.
+- Podemos colocar elementos um abaixo do outro, utilizamos o Widget: Column(), e para deixa um ao lado do outro, utilizamos  Widget: Row(). Em ambos não criamos um "filho" (child), e sim "filhos, com children, e nele podemos colocar mais Widgets e personalizar de acordo com o aplicativo.
+- Para alinhar ao centro, temos algumas propriedades como: mainAxisAlignment  e crossAxisAlignment.
