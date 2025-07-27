@@ -1,5 +1,6 @@
 import 'package:alterar_tema/appController.dart';
 import 'package:alterar_tema/homePage.dart';
+import 'package:alterar_tema/loginPage.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -15,7 +16,10 @@ class AppWidget extends StatelessWidget {
                 ? Brightness.dark
                 : Brightness.light,
           ),
-          home: HomePage(),
+          home: LoginPage(),
+          routes: {
+            '/home': (context) => HomePage(),
+          },
         );
       },
     );

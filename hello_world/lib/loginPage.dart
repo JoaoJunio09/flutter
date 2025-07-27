@@ -48,8 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15),
                 ElevatedButton(
                   onPressed: () {
-                    if (email == "jacob@flutterando.com.br" &&
-                        password == "123") {
+                    if (email == "jacob@flutterando.com.br" && password == "123") {
                       Navigator.of(context).pushReplacementNamed('/home');
                     } else {
                       print('Login inválido');
