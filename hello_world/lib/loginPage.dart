@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/homePage.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -49,9 +50,9 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (email == "jacob@flutterando.com.br" &&
                         password == "123") {
-                      print('Correto');
+                      Navigator.of(context).pushReplacementNamed('/home');
                     } else {
-                      print('Errado');
+                      print('Login inválido');
                     }
                   },
                   child: Text('Entrar'),
