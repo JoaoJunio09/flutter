@@ -14,6 +14,41 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              currentAccountPicture: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Image.network(
+                  'https://romerolab.com.br/wp-content/uploads/2022/01/Arquetipo-do-Homem-Comum-para-o-seu-varejo-2.jpg'
+                ),
+              ),
+              accountName: Text('Jacob Moura'), 
+              accountEmail: Text('joacob@flutterando.com.br')
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Logout'),
+              subtitle: Text('Finalizar sessão'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.only(
+                left: 20, top: 30
+              ),
+              leading: Icon(Icons.home),
+              title: Text('Logout'),
+              subtitle: Text('Finalizar sessão'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text('Home Page', style: TextStyle(color: Colors.white)),
         actions: [CustomSwitcher()],

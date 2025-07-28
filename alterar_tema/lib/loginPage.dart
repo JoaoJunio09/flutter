@@ -16,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
         child: SizedBox(
           height: double.infinity,
           width: double.infinity,
-          child: Column(
+          child: Column( 
             children: [
               Container(
                 color: const Color.fromARGB(255, 38, 0, 100),
