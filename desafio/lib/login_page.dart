@@ -15,34 +15,26 @@ class LoginPage extends StatelessWidget {
               'assets/images/tinder_white_flame_black_outline.png'
             ),
           ),
-
           Container(height: 25),
-
           SizedBox(
             child: Text(
               'Location Changer',
               style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w700),
             ),
           ),
-
           Container(height: 10),
-
           SizedBox(
             child: Text(
               'PLugin app for Tinder',
               style: TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
-
           Container(height: 30),
-
           SizedBox(
             height: 55,
             width: 250,
             child: ElevatedButton(
-              onPressed: () {
-
-              },
+              onPressed: () {},
               child: Text(
                 'Login with Facebook',
                 style: TextStyle(color: const Color.fromARGB(255, 255, 67, 85), fontWeight: FontWeight.w450),
